@@ -5,14 +5,12 @@ import { v4 as uuidv4 } from 'uuid';
 
 const BookForm = ({bookObject, AddFunction, editando}) => {
 
-  const [book, setBook] = useState(() => {
-    return {
+  const [book, setBook] = useState({
     bookname: bookObject ? bookObject.bookname : '',
     author: bookObject ? bookObject.author : '',
     quantity: bookObject ? bookObject.quantity : '',
     price: bookObject ? bookObject.price : '',
     date: bookObject ? bookObject.date : '',
-    };
   });
 
   const handleChange = (e) => {

@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import BooksContext from '../context/BooksContext';
 import BookForm from './BookForm';
 
-const AddBook = ({setBooks, books}) => {
+const AddBook = () => {
+
+  const { books, setBooks } = useContext(BooksContext);
 
   const AddNewBook = (book) => {
     setBooks([...books, book]);
