@@ -1,13 +1,37 @@
 body {
+  background-color: rgb(226, 191, 126);
+  background-image: linear-gradient(
+      115deg,
+      rgb(226, 191, 126) 0%,
+      rgba(53, 100, 255, 0.4)
+    ),
+    url(https://cdn.pixabay.com/photo/2014/09/24/16/28/bricks-459299_960_720.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto", sans-serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.btn-submit{
+  background-color: rgba(1, 30, 126);
+  color: rgb(255, 255, 255);
+  border: none;
+}
+
+.btn-submit:hover{
+  background-color: rgba(1, 30, 126);
+  color: rgb(224, 167, 59);
+}
+
+
+.book{
+  background-color: rgb(233, 169, 96);
 }
